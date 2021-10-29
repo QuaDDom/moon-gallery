@@ -1,6 +1,6 @@
 # Welcome to the Moon Gallery 🌕
 
-##Technologies used
+## Technologies used
 
 ## Languages:
 	Javascript
@@ -10,7 +10,7 @@
 	Express
 	Node
 
-##Database
+## Database
 	MongoDB
 	Mongoose
 
