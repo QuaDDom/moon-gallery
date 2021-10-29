@@ -1,0 +1,51 @@
+import { useEffect, useRef, useState } from "react"
+import './Gallery.scss'
+import Image from "./Image";
+import Loader from './Loader'
+
+export default function Gallery() {
+    const [images, setImages] = useState(null);
+    const [changeSpan, setChangeSpan] = useState(1);
+    const [loading, setLoading] = useState(false);
+    const image = useRef(null);
+
+    useEffect(()=>{
+        setLoading(true)
+        fetch('/api/images')
+        .then((res)=> res.json())
+        .then((data)=> {setImages(data); setTimeout(()=> setLoading(false),[1000]);})
+    }, [])
+
+    const handleSpan = ()=>{
+        images.forEach(()=>{
+            if(image.current.clientWidth >= 100){
+                setChangeSpan(2)
+            }
+            else{
+                setChangeSpan(1)
+            }
+        })
+        return changeSpan
+    }
+
+    return (
+        <>
+        {
+        loading && <Loader/>
+        }
+        <div className='gallery'>
+            {
+            images &&
+            images.map((el)=>
+            <Image
+                url={el.url}
+                id={el._id}
+                key={el._id}
+                handleSpan={handleSpan}
+                reference={image}
+            />
+            )}
+        </div>
+        </>
+    )
+}

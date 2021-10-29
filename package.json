@@ -1,0 +1,68 @@
+{
+  "name": "moon-gallery",
+  "version": "0.1.0",
+  "proxy": "http://localhost:5000",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "aws-sdk": "^2.1013.0",
+    "axios": "^0.23.0",
+    "connect-flash": "^0.1.1",
+    "dotenv": "^10.0.0",
+    "express-fileupload": "^1.2.1",
+    "express-session": "^1.17.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.0.12",
+    "particles.js": "^2.0.0",
+    "passport": "^0.5.0",
+    "passport-local": "^1.0.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-icons": "^4.3.1",
+    "react-particles-js": "^2.4.0",
+    "react-router-dom": "^5.3.0",
+    "react-scripts": "4.0.3",
+    "react-spinners": "^0.11.0",
+    "web-vitals": "^1.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "server-dev": "nodemon ./server/index.js --exec babel-node --ignore src",
+    "server-build": "babel server -d dist",
+    "server-start": "node dist/index.js"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.15.7",
+    "@babel/core": "^7.15.8",
+    "@babel/node": "^7.15.8",
+    "@babel/plugin-transform-runtime": "^7.15.8",
+    "@babel/preset-env": "^7.15.8",
+    "ncp": "^2.0.0",
+    "nodemon": "^2.0.14",
+    "rimraf": "^3.0.2",
+    "sass": "^1.43.3"
+  }
+}

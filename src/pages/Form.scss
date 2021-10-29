@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&display=swap');
+@import '../components/sass/variables';
+.containerForm{
+    width: 100%;
+    position: relative;
+    max-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    .form{
+        margin-top: 130px;
+        height: 700px;
+        width: 1000px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #121212;
+        .title{
+            top: 100px;
+            position: absolute;
+            text-align: center;
+            color: $second_color;
+            font-size: 60px;
+        }
+        form{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            min-width: 500px;
+            min-height: 700px;
+            .uploadLabel{
+                margin: 15px 0px;
+                height: 40px;
+                height: 60px;
+                width: 60px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 5px 30px;
+                border: 3px solid #fff;
+                transition: 0.3s;
+                cursor: pointer;
+                i{
+                    transition: 0.3s;
+                    font-size: 30px;
+                }
+                &:hover{
+                    background: #fff;
+                    color: #000;
+                }
+                &:hover i{
+                    color: #000;
+                }
+            }
+            button{
+                display: block;
+                margin-top: 50px;
+                height: 40px;
+                width: 250px;
+                font-size: 25px;
+                border: 2.5px solid #fff;
+                transition: 0.3s;
+                background: transparent;
+                font-family: 'Poppins', sans-serif;
+                color: $second_color;
+                &:hover{
+                    background: #fff;
+                    transform: translateY(-5px);
+                    box-shadow: 10px 10px 10px#00000050;
+                }
+            }
+        }
+    }
+}

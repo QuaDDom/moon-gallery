@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&display=swap');
+@import '../components/sass/variables';
+.containerHome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    .titleBox{
+        margin-top: 50px;
+        .welcome{
+            text-align: center;
+            margin: 50px 0;
+            color: #fff;
+            font-size: 80px;
+            span{
+                color: $second_color;
+            }
+        }
+    }
+}
+
+@keyframes welcome {
+    from{
+        transform: scaleX(0);
+    }
+    to{
+        transform: scaleX(1);
+    }
+}
