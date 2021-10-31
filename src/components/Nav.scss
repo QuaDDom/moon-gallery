@@ -12,6 +12,13 @@ header{
     font-family: 'Maven Pro', sans-serif;
     justify-content: space-between;
     background: #111;
+    .toggle-menu{
+        position: absolute;
+        right: 50px;
+        .hamburger-react{
+
+        }
+    }
     .logo{
         color: #fff;
         font-size: 35px;
@@ -24,7 +31,7 @@ header{
         font-weight: 200;
         color: $second_color;
     }
-    nav{
+    .navigation{
         padding-right: 150px;
         display: flex;
         justify-content: center;
@@ -57,6 +64,14 @@ header{
         }
         .activeNavLink{
             color: $second_color;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .toggle-menu{
+        .hamburger-react{
+            visibility: visible;
         }
     }
 }
