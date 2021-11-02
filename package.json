@@ -36,7 +36,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy": "npm run build",
+    "predeploy": "npm run build && echo 'moongallery.xyz' > ./build/CNAME",
     "deploy": "gh-pages -d build",
     "server-dev": "nodemon ./server/index.js --exec babel-node --ignore src",
     "server-build": "babel server -d dist",
