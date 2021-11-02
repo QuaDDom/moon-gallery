@@ -9,6 +9,7 @@
     "@testing-library/user-event": "^12.1.10",
     "aws-sdk": "^2.1013.0",
     "axios": "^0.23.0",
+    "concurrently": "^6.3.0",
     "connect-flash": "^0.1.1",
     "dotenv": "^10.0.0",
     "express-fileupload": "^1.2.1",
@@ -31,7 +32,7 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "start": "node dist/index.js",
+    "start": "concurrently \"react-scripts start\" \"node ./dist/index.js\"",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",

@@ -18,6 +18,11 @@ var _user = _interopRequireDefault(require("./routes/user.routes"));
 
 (0, _dotenv.config)();
 var app = (0, _express.default)();
+
+if (process.env.NODE_ENV === 'production') {
+  app.set(_express.default.static('../build/static'));
+}
+
 app.set('port', process.env.SERVER_PORT || 4000);
 app.use((0, _expressFileupload.default)({
   tempFileDir: '/temp'
