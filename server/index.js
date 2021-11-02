@@ -9,7 +9,13 @@ import userRoutes from './routes/user.routes'
 config();
 const app = express();
 
+if (process.env.NODE_ENV === 'production'){
+    app.set(express.static('../build/static'))
+}
+
 app.set('port', process.env.SERVER_PORT || 4000);
+
+
 
 app.use(upload({
     tempFileDir: '/temp'
