@@ -1,6 +1,44 @@
-.error{
+@import './sass/variables';
+
+.containerError{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+    .error{
+        font-size: 300px;
+        span{
+            display: inline-block;
+            color: $second_color;
+            animation: movementSpan 2s infinite ease-in-out;
+            animation-direction: alternate-reverse;
+        }
+        img{
+            height: 270px;
+            width: 270px;
+            animation: movement 2s infinite ease-in-out;
+        }
+    }
+    .msg{
+        font-size: 50px;
+        font-weight: 800;
+    }
+}
+@keyframes movement {
+    0%,100%{
+        transform: translateY(-20px);
+    }
+    50%{
+        transform: translateY(0);
+    }
+}
+@keyframes movementSpan {
+    0%,100%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-20px);
+    }
 }
