@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/moon-gallery/static/css/main.5f142c4a.chunk.css",
+    "main.js": "/moon-gallery/static/js/main.4ad27ac3.chunk.js",
+    "main.js.map": "/moon-gallery/static/js/main.4ad27ac3.chunk.js.map",
+    "runtime-main.js": "/moon-gallery/static/js/runtime-main.a4ffd97b.js",
+    "runtime-main.js.map": "/moon-gallery/static/js/runtime-main.a4ffd97b.js.map",
+    "static/js/2.a5b63cfa.chunk.js": "/moon-gallery/static/js/2.a5b63cfa.chunk.js",
+    "static/js/2.a5b63cfa.chunk.js.map": "/moon-gallery/static/js/2.a5b63cfa.chunk.js.map",
+    "static/js/3.651ebad4.chunk.js": "/moon-gallery/static/js/3.651ebad4.chunk.js",
+    "static/js/3.651ebad4.chunk.js.map": "/moon-gallery/static/js/3.651ebad4.chunk.js.map",
+    "index.html": "/moon-gallery/index.html",
+    "static/css/main.5f142c4a.chunk.css.map": "/moon-gallery/static/css/main.5f142c4a.chunk.css.map",
+    "static/js/2.a5b63cfa.chunk.js.LICENSE.txt": "/moon-gallery/static/js/2.a5b63cfa.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a4ffd97b.js",
+    "static/js/2.a5b63cfa.chunk.js",
+    "static/css/main.5f142c4a.chunk.css",
+    "static/js/main.4ad27ac3.chunk.js"
+  ]
+}
