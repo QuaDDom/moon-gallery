@@ -2,6 +2,7 @@
   "name": "moon-gallery",
   "version": "0.1.0",
   "proxy": "http://localhost:5000",
+  "homepage": "http://quaddom.github.io/moon-gallery",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
@@ -13,6 +14,7 @@
     "dotenv": "^10.0.0",
     "express-fileupload": "^1.2.1",
     "express-session": "^1.17.2",
+    "gh-pages": "^3.2.3",
     "hamburger-react": "^2.4.1",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.0.12",
@@ -23,6 +25,7 @@
     "react-dom": "^17.0.2",
     "react-icons": "^4.3.1",
     "react-particles-js": "^2.4.0",
+    "react-responsive": "^9.0.0-beta.4",
     "react-router-dom": "^5.3.0",
     "react-scripts": "4.0.3",
     "react-spinners": "^0.11.0",
@@ -33,6 +36,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "server-dev": "nodemon ./server/index.js --exec babel-node --ignore src",
     "server-build": "babel server -d dist",
     "server-start": "node dist/index.js"

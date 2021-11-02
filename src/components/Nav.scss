@@ -15,9 +15,6 @@ header{
     .toggle-menu{
         position: absolute;
         right: 50px;
-        .hamburger-react{
-
-        }
     }
     .logo{
         color: #fff;
@@ -68,10 +65,3 @@ header{
     }
 }
 
-@media (max-width: 768px) {
-    .toggle-menu{
-        .hamburger-react{
-            visibility: visible;
-        }
-    }
-}
