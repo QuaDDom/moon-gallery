@@ -2,7 +2,6 @@
   "name": "moon-gallery",
   "version": "0.1.0",
   "proxy": "http://localhost:5000",
-  "homepage": "http://www.moongallery.xyz/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
@@ -36,8 +35,6 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy": "npm run build && echo 'www.moongallery.xyz' > ./build/CNAME",
-    "deploy": "gh-pages -d build",
     "server-dev": "nodemon ./server/index.js --exec babel-node --ignore src",
     "server-build": "babel server -d dist",
     "server-start": "node dist/index.js"
