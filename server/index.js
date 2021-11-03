@@ -10,7 +10,7 @@ config();
 const app = express();
 
 if (process.env.NODE_ENV === 'production'){
-    app.set(express.static('../build/static'))
+    app.set(express.static('../build'))
 }
 
 app.set('port', process.env.SERVER_PORT || 4000);
