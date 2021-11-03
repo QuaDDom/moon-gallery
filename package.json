@@ -32,7 +32,7 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "start": "concurrently \"react-scripts start\" \"node ./dist/index.js\"",
+    "start": "node ./dist/index.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
