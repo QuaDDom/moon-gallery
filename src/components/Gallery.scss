@@ -2,6 +2,7 @@
     width: 85%;
     display: grid;
     grid-gap: 15px;
-    grid-auto-rows: minmax(300px, auto);
-    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(200px, auto);
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    overflow: hidden;
 }
