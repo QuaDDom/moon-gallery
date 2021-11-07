@@ -1,5 +1,6 @@
 import './Image.scss'
 import { useHistory } from 'react-router'
+import 'aos/dist/aos.css'
 import { useEffect } from 'react';
 
 export default function Image({url, id, handleSpan, reference}) {
@@ -22,7 +23,7 @@ export default function Image({url, id, handleSpan, reference}) {
 
 
     return (
-        <div className='containerImage' onClick={handleClick} ref={image}>
+        <div data-aos="zoom-in" className='containerImage' onClick={handleClick} ref={image}>
             <img src={url} alt="" className='oneImage'/>
         </div>
     )
