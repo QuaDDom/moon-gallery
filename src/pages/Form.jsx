@@ -4,10 +4,13 @@ import { useState } from "react";
 import ParticlesBackground from "../components/ParticlesBackground";
 import particlesConfig from "../config/particlesform.config";
 import Input from "../components/Input";
+import { useHistory } from "react-router";
 
 export default function Form() {
     const [title, setTitle] = useState('');
     const [file, setFile] = useState(null);
+    const [loader, setLoader] = useState(false);
+    const history = useHistory();
 
     const handleChange = (e)=>{
         if(e.target.name === 'title'){
@@ -20,6 +23,7 @@ export default function Form() {
         }
     },
         handleSubmit = async (e)=>{
+            setLoader(true)
             e.preventDefault();
         
             const formData = new FormData();
@@ -32,7 +36,11 @@ export default function Form() {
               }
             });
   
-    
+            if(res){
+                setLoader(false)
+                history.push('/');
+            }
+
             console.log(res);
 
     }
