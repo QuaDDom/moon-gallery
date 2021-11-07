@@ -13,21 +13,36 @@
             margin: 50px 0;
             color: #fff;
             font-size: 5rem;
+            animation: welcome 2s;
             @media (max-width: 768px) {
                 font-size: 3rem;
             }
             span{
-                color: $second_color;
+                animation: welcomeSpan 2s;
+                animation-delay: 2s;
+                animation-fill-mode: forwards;
+                color: transparent;
             }
         }
     }
 }
 
 @keyframes welcome {
+    0%{
+        transform: translateY(-600px);
+    }
+    60%{
+        transform: translateY(20px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+@keyframes welcomeSpan {
     from{
-        transform: scaleX(0);
+        color: transparent;
     }
     to{
-        transform: scaleX(1);
+        color: $second_color;
     }
 }
