@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react"
 import './Gallery.scss'
 import Image from "./Image";
 import Loader from './Loader'
-import Aos from 'aos'
+
 
 export default function Gallery({loading, setLoading}) {
     const [images, setImages] = useState(null);
@@ -11,13 +11,9 @@ export default function Gallery({loading, setLoading}) {
 
     useEffect(()=>{
         setLoading(true)
-        Aos.init({duration: 500})
         fetch('/api/images')
         .then((res)=> res.json())
-        .then((data)=> {
-            setImages(data);
-            setTimeout(()=> setLoading(false),[1000]);
-            })
+        .then((data)=> {setImages(data); setTimeout(()=> setLoading(false),[1000]);})
     }, [setLoading])
 
     const handleSpan = ()=>{

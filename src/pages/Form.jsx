@@ -5,6 +5,7 @@ import ParticlesBackground from "../components/ParticlesBackground";
 import particlesConfig from "../config/particlesform.config";
 import Input from "../components/Input";
 import { useHistory } from "react-router";
+import { BarLoader } from "react-spinners";
 
 export default function Form() {
     const [title, setTitle] = useState('');
@@ -55,7 +56,17 @@ export default function Form() {
                     <Input type='text' label='Title' handle={handleChange} name="title"/>
                     <input type="file" id="upload" hidden onChange={handleChange}/>
                     <label htmlFor="upload" className='uploadLabel'><i className="far fa-images"></i></label>
-                    <button>Upload</button>
+                    {
+                        loader ? <div className="loader">
+                        <h3 className="loaderTitle">Uploading image...</h3>
+                        <br />
+                        <BarLoader
+                        width='300'
+                        size={20}
+                        color={'#ff9100'}
+                        />
+                        </div>  : <button>Upload</button>
+                    }
                 </form>
             </div>
         </div>
