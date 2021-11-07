@@ -12,7 +12,10 @@
             text-align: center;
             margin: 50px 0;
             color: #fff;
-            font-size: 80px;
+            font-size: 5rem;
+            @media (max-width: 768px) {
+                font-size: 3rem;
+            }
             span{
                 color: $second_color;
             }

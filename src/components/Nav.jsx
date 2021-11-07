@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useHistory } from "react-router-dom";
 import { Squash as Hamburger } from 'hamburger-react';
 import './Nav.scss'
 import { useEffect, useState } from "react";
@@ -7,6 +7,7 @@ import { useMediaQuery } from "react-responsive";
 
 export default function Nav() {
     const [isOpen, setIsOpen] = useState(false);
+    const history = useHistory();
 
     const visibilityResponsiveMenu = useMediaQuery({
         query: '(max-width: 768px)'
@@ -15,7 +16,7 @@ export default function Nav() {
     return (
         <>
         <header>
-                <h3 className="logo">MOON<span className='logoGallery'>Gallery</span></h3>
+                <h3 className="logo" onClick={()=> history.push('/')}>MOON<span className='logoGallery'>Gallery</span></h3>
                 {
                     visibilityResponsiveMenu &&
                     <div className="toggle-menu">

@@ -20,10 +20,20 @@
             width: 270px;
             animation: movement 2s infinite ease-in-out;
         }
+        @media (max-width: 768px) {
+            font-size: 150px;
+            & img{
+                height: 125px;
+                width: 125px;
+            }
+        }
     }
     .msg{
         font-size: 50px;
         font-weight: 800;
+        @media (max-width: 768px) {
+            font-size: 30px;
+        }
     }
 }
 @keyframes movement {

@@ -18,9 +18,14 @@ header{
     }
     .logo{
         color: #fff;
+        cursor: pointer;
         font-size: 35px;
         padding-left: 30px;
+        transition: 0.3s;
         margin: 0;
+        &:hover{
+            transform: scale(1.1);
+        }
     }
     .logoGallery{
         font-size: 20px;
