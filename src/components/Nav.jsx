@@ -1,7 +1,7 @@
 import { NavLink, useHistory } from "react-router-dom";
 import { Squash as Hamburger } from 'hamburger-react';
 import './Nav.scss'
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import ResponsiveNav from "./ResponsiveNav";
 import { useMediaQuery } from "react-responsive";
 
@@ -33,7 +33,7 @@ export default function Nav() {
                 }
         </header>
         {
-            isOpen  && <ResponsiveNav isOpen={isOpen}/> 
+            isOpen  && <ResponsiveNav isOpen={isOpen} setIsOpen={setIsOpen}/> 
         }
         </>
     )

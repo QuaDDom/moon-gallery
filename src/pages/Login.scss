@@ -13,6 +13,10 @@
         margin-top: 130px;
         height: 700px;
         width: 1000px;
+        @media (max-width: 768px) {
+            height: 500px;
+            width: 600px;
+        }
         position: relative;
         display: flex;
         justify-content: center;
@@ -24,6 +28,10 @@
             color: $second_color;
             position: absolute;
             top: 70px;
+            @media (max-width: 768px) {
+                font-size: 50px;
+                top: 28px;
+            }
         }
         form{
             display: flex;
@@ -40,6 +48,11 @@
                 margin: 50px auto auto auto;
                 font-size: 25px;
                 font-family: 'Poppins', sans-serif;
+                @media (max-width: 768px) {
+                    font-size: 20px;
+                    width: 300px;
+                    height: 40px;
+                }
                 &:hover{
                     background: #fff;
                     transform: translateY(-5px);

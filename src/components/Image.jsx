@@ -1,6 +1,6 @@
 import './Image.scss'
 import { useHistory } from 'react-router'
-import { useEffect, useRef } from 'react';
+import { useEffect } from 'react';
 
 export default function Image({url, id, handleSpan, reference}) {
 
